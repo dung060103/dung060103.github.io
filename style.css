@@ -1,0 +1,20 @@
+.containerCall
+{
+    width: 500px ;
+    height: 500px;
+    position: relative;
+}
+#localCallVideo
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#localGuestVideo
+{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+}

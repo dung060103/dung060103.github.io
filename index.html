@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="./jquery.min.js"></script>
+  <script src="./peerjs.min.js"></script>
+  <script src="./socket.io.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>WEB RTC BY PEER_JS, SOCKET_IO</title>
+</head>
+
+<body>
+
+  <div class="bodyCall">
+    <div id="ID_PEERJS" class="alert alert-primary" role="alert">
+      LOADING ... ID PEERJS
+    </div>
+    <div class="list-group" id="listUserOnline">
+      <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+        List User Online
+      </button>
+    </div>
+  
+    <button id="callNow" type="button" class="btn btn-info">Call Now</button>
+    <div class="containerCall">
+      <video width="" height="10" src="" id="localCallVideo" autoplay></video>
+      <video width="10" height="10" src="" id="localGuestVideo" autoplay></video>
+    </div>
+  </div>
+
+<div class="body-signUp">
+  <div class="input-group mb-3">
+    <input id="iptSignUpUserName" type="text" class="form-control" placeholder="User name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button id="btnSignUpUserName" class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+  </div>
+</div>
+
+  <!-- <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">#</span>
+    </div>
+    <input id="value_ID_PEERJS" type="text" class="form-control" placeholder="ID Call Peer JS" aria-label="Username"
+      aria-describedby="basic-addon1">
+  </div> -->
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
